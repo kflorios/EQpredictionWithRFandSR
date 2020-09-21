@@ -7,7 +7,7 @@ To run the R code you will need:
 2. packages 'tseries','nnet','xtable','pracma','matrixStats','e1071','ROCR','verification','randomForest' in R installed
 
 
-The runs have been checked in a windows 64 with R3.2.4revised 64bit and R4.0.2 64bit (latest as of September 20, 2020).
+The runs have been checked in a windows 64 machine with R3.2.4revised 64bit and R4.0.2 64bit (latest as of September 20, 2020).
 
 
 ## (>4 Richter) EQ in next 48h in a window of +/- 3 degrees from Measurement Station
