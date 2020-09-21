@@ -110,8 +110,7 @@ evaluateModels <- function(fnameX,fnameY,m) {
   #y<- y_GT_M1_flare
   #C class flare
   y<- y_GT_R4_Quake
-  #Χ class flare
-  ###y<- y_X1_flare
+  
   
   
   te <- dataFram
@@ -1373,18 +1372,18 @@ evaluateModels <- function(fnameX,fnameY,m) {
   dev.off()
 
   #PRcurve
-  require(DMwR)
+  ######require(DMwR)
   #logit model
   #jpeg("ROC_logit_model.jpeg")
   #tiff("ROC_logit_model.tiff")
-  tiff("PRCURVE_mlp_model.tiff")
+  ######tiff("PRCURVE_mlp_model.tiff")
   #pred3 <- prediction(m3.predict,teTst$y_GT_R4)
   #perf3 <- performance(pred3,"tpr","fpr")
   #plot(perf3,main=c("LG, ROC"),cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5) 
   #lines(seq(0,1,0.01),seq(0,1,0.01))
   
-  PRcurve(p.nnet.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
-  dev.off()  
+  ######PRcurve(p.nnet.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
+  ######dev.off()  
   
     
   auc.perf0 = performance(pred0, measure = "auc")
@@ -1400,19 +1399,19 @@ evaluateModels <- function(fnameX,fnameY,m) {
   dev.off()
 
   #PRcurve
-  require(DMwR)
+  ######require(DMwR)
   #logit model
   #jpeg("ROC_logit_model.jpeg")
   #tiff("ROC_logit_model.tiff")
-  tiff("PRCURVE_lm_model.tiff")
+  ######tiff("PRCURVE_lm_model.tiff")
   #tiff("PRCURVE_rg_model.tiff")
   #pred3 <- prediction(m3.predict,teTst$y_GT_R4)
   #perf3 <- performance(pred3,"tpr","fpr")
   #plot(perf3,main=c("LG, ROC"),cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5) 
   #lines(seq(0,1,0.01),seq(0,1,0.01))
   
-  PRcurve(m1.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
-  dev.off()  
+  ######PRcurve(m1.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
+  ######dev.off()  
   
     
   auc.perf1 = performance(pred1, measure = "auc")
@@ -1441,18 +1440,18 @@ evaluateModels <- function(fnameX,fnameY,m) {
   dev.off()  
 
   #PRcurve
-  require(DMwR)
+  ######require(DMwR)
   #logit model
   #jpeg("ROC_logit_model.jpeg")
   #tiff("ROC_logit_model.tiff")
-  tiff("PRCURVE_logit_model.tiff")
+  ######tiff("PRCURVE_logit_model.tiff")
   #pred3 <- prediction(m3.predict,teTst$y_GT_R4)
   #perf3 <- performance(pred3,"tpr","fpr")
   #plot(perf3,main=c("LG, ROC"),cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5) 
   #lines(seq(0,1,0.01),seq(0,1,0.01))
   
-  PRcurve(m3.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
-  dev.off()  
+  ######PRcurve(m3.predict,teTst$y_GT_R4,ylim=(c(0,1)),xlim=c(0,1))
+  ######dev.off()  
   
     
   auc.perf3 = performance(pred3, measure = "auc")
@@ -1468,18 +1467,18 @@ evaluateModels <- function(fnameX,fnameY,m) {
   dev.off()     
 
   #PRcurve
-  require(DMwR)
+  ######require(DMwR)
   #randomForest model
   #jpeg("ROC_randomForest_model.jpeg")
-  tiff("PRCURVE_randomForest_model.tiff")
+  ######tiff("PRCURVE_randomForest_model.tiff")
   
   #pred4 <- prediction(p.randomForest.predict.new,teTst$y_GT_R4)
   #perf4 <- performance(pred4,"tpr","fpr")
   #plot(perf4,main=c("RF, ROC"),cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5) 
   #lines(seq(0,1,0.01),seq(0,1,0.01))
-  PRcurve(p.randomForest.predict.new,teTst$y_GT_R4)
+  ######PRcurve(p.randomForest.predict.new,teTst$y_GT_R4)
   
-  dev.off()     
+  ######dev.off()     
   
     
   auc.perf4 = performance(pred4, measure = "auc")
