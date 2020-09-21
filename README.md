@@ -46,3 +46,6 @@ Runs in the paper are done with R3.2.4revised 64bit.
 Runs have been also made with latest R4.0.2 64bit.
 For reference, in the paper the former results are presented. They differ very slightly due to R's lack of backward compatibility.
 It might just be an issue of different random number generators used between R3.2.4revised and R4.0.2.
+
+## Reference
+Florios, K., Contopoulos, I., Tatsis, G., Christofilakis, V., Chronopoulos, S., Repapis, C and Tritakis, V., Possible Earthquake Forecasting in a narrow Space-Time-Magnitude Window, submitted, 2020
